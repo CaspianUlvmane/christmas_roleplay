@@ -74,6 +74,6 @@ export default function Character (){
         <p className="font-sans">{character.skill3}</p>
     </div>
         <h3 className="text-xl">Anteckningar</h3>
-        <div contentEditable className="bg-transparent w-full mb-12 font-sans">Skriv här</div>
+        <div contentEditable className="bg-transparent w-full mb-12 font-sans rounded-md border border-[black]"></div>
  </div>
 }
