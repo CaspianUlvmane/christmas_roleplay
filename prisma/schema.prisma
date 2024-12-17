@@ -26,4 +26,7 @@ model Character {
   skill1       String
   skill2       String
   skill3       String
+  closeRange   Int    @default(0)
+  longRange    Int    @default(0)
+  attackSkill  String
 }

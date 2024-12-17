@@ -68,6 +68,16 @@ export default function Character (){
         </div>
     </div>
     <div className="flex flex-col gap-3">
+        <h3 className="text-xl">Attacker</h3>
+        <div className="flex justify-between">
+            <label htmlFor="life">Livspoäng</label>
+            <input name="life" type="number" defaultValue={20} className="bg-transparent w-8 text-right" />
+        </div>
+        <p className="font-sans">Närstrid: {character.closeRange}</p>
+        <p className="font-sans">Långdistans: {character.longRange}</p>
+        <p className="font-sans">Special: {character.attackSkill}</p>
+    </div>
+    <div className="flex flex-col gap-3">
         <h3 className="text-xl">Egenskaper</h3>
         <p className="font-sans">{character.skill1}</p>
         <p className="font-sans">{character.skill2}</p>
