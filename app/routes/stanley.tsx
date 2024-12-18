@@ -5,7 +5,8 @@ import parchment from "app/assets/parchment.png"
 export async function action({request}:ActionFunctionArgs) {
     const body = await request.formData()
     const name = await body.get('text')
-    if(name && name.includes('stan')){
+
+    if(name && name.toLowerCase().includes('stan')){
         return redirect('https://carlstanley.se')
     }
     return name
